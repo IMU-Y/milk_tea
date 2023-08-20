@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喜东茶预定</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <header>
+    <div class="img-list">
+      <img src="./img/mt1.jpg" alt="">
+      <img src="./img/mt2.jpg" alt="">
+      <img src="./img/mt3.jpg" alt="">
+      <img src="./img/mt4.jpg" alt="">
+    </div>
+  </header>
+  <main class="order-form">
+    <div class="scroll-top">回到顶部</div>
+    <form method="post" action="">
+      <div class="form-item">
+        <label for="type">奶茶口味</label>
+        <ul class="form-item-control">
+          <li class="radio-item">
+            <input type="radio" name="type" id="芋泥波波" value="芋泥波波" checked />
+            芋泥波波
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="type" id="芝芝桃桃" value="芝芝桃桃" />
+            芝芝桃桃
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="type" id="多肉葡萄" value="多肉葡萄" />
+            多肉葡萄
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="num">几杯</label>
+        <input type="number" min="1" required id="num" name="num" class="select-item">
+      </div>
+      <div class="form-item">
+        <label for="size">杯型</label>
+        <ul class="form-item-control">
+          <li class="radio-item">
+            <input type="radio" name="size" id="超大杯" value="超大杯" checked />
+            超大杯
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="size" id="大杯" value="大杯" />
+            大杯
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="size" id="中杯" value="中杯" />
+            中杯
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="sugar">甜度</label>
+        <select name="sugar" required class="select-item">
+          <option value="无糖">无糖</option>
+          <option value="三分糖">三分糖</option>
+          <option value="五分糖">五分糖</option>
+          <option value="全糖" selected>全糖</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="snack-free">免费小料</label>
+        <ul class="form-item-control">
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="波霸" value="波霸" />
+            波霸
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="椰果" value="椰果" />
+            椰果
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="西米露" value="西米露" />
+            西米露
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="茶冻" value="茶冻" />
+            茶冻
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="红豆" value="红豆" />
+            红豆
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack-free" id="仙草" value="仙草" />
+            仙草
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="snack">加价小料</label>
+        <ul class="form-item-control">
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack" id="冰淇淋（￥4）" value="冰淇淋（￥4）" />
+            冰淇淋（￥4）
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack" id="布丁（￥3）" value="布丁（￥3）" />
+            布丁（￥3）
+          </li>
+          <li class="checkbox-item">
+            <input type="checkbox" name="snack" id="奶霜（￥2）" value="奶霜（￥2）" />
+            奶霜（￥2）
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="ice">是否加冰</label>
+        <ul class="form-item-control">
+          <li class="radio-item">
+            <input type="radio" name="ice" id="是" value="是" checked />
+            是
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="ice" id="否" value="否" />
+            否
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="remove-tea">是否去茶底</label>
+        <ul class="form-item-control">
+          <li class="radio-item"><input type="radio" name="remove-tea" id="是" value="是" checked />
+            是
+          </li>
+          <li class="radio-item"><input type="radio" name="remove-tea" id="否" value="否" />
+            否
+          </li>
+        </ul>
+      </div>
+      <div class="form-item">
+        <label for="address">你的地址</label>
+        <textarea name="address" rows="8" required class="text-item"></textarea>
+      </div>
+      <div class="form-item">
+        <label for="phone">你的手机号</label>
+        <input name="phone" type="tel" type="text" class="select-item" required>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label" for="time">期待送达时间</label>
+        <input name="time" type="time" required class="select-item" />
+      </div>
+      <div class="form-item">
+        <label class="form-item-label" for="comment">备注</label>
+        <textarea name="comment" rows="8" class="text-item"></textarea>
+      </div>
+      <div class="form-item">
+        <label class="form-item-label" for="pay-type">支付方式</label>
+        <ul class="form-item-control">
+          <li class="radio-item">
+            <input type="radio" name="pay-type" id="微信支付" value="微信支付" checked required />
+            微信支付
+          </li>
+          <li class="radio-item">
+            <input type="radio" name="pay-type" id="支付宝" value="支付宝" />
+            支付宝
+          </li>
+        </ul>
+      </div>
+      <div class="form-item button-area">
+        <button type="submit" class="submit-btn">提交</button>
+        <button type="reset">重置</button>
+      </div>
+    </form>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>

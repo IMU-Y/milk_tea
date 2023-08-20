@@ -1,0 +1,121 @@
+/* 顶部图片区 */
+header {
+  background-color: #434343;
+  padding: 16px;
+}
+
+header .img-list {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+header .img-list img {
+  cursor: pointer;
+  border-radius: 12px;
+  width: 20%;
+  transition: transform 0.3s ease;
+}
+
+header .img-list img:hover {
+  -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+/* 内容表单区 */
+.order-form {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-item label::after {
+  content: "：";
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 32px;
+}
+
+.form-item-control {
+  display: flex;
+  flex-wrap: wrap;
+  width: 68%;
+}
+
+.form-item label {
+  margin-right: 16px;
+  width: 30%;
+  text-align: right;
+}
+
+.radio-item,
+.checkbox-item {
+  margin-right: 10px;
+}
+
+.select-item {
+  width: 50%;
+  height: 26px;
+}
+
+.text-item {
+  width: 50%;
+}
+
+.scroll-top {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #434343;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button {
+  height: 32px;
+  padding: 4px 15px;
+  border-radius: 6px;
+  margin-right: 12px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: #1677ff;
+  color: #fff;
+}
+
+.button-area {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* 适配小屏幕设备，比如手机 */
+@media (max-width: 767px) {
+
+  /* 在这里设置适合小屏幕的样式 */
+}
+
+/* 适配中等屏幕设备，比如平板 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* 在这里设置适合中等屏幕的样式 */
+}
+
+/* 适配大屏幕设备，比如桌面电脑 */
+@media (min-width: 1024px) {
+
+  /* 在这里设置适合大屏幕的样式 */
+}
